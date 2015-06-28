@@ -1,0 +1,27 @@
+﻿
+
+<div>
+    <style>
+    #audio-music { 
+  width:100%;
+  height:100%;
+  z-index: 1000;
+}
+</style>
+    <div>i am music.</div>
+    <video id="myvideo" loop></video> 
+    <!--<div style="width:100%; height:400px;">
+        <video id="audio-music" style="display:block" controls="controls">
+            <source name='s1' src="http://pd.npr.org/npr-mp4/npr/ascvid/2015/02/20150217_ascvid_UntilTheRibbonBreaks_02-n-600000.mp4" type="video/mp4" />
+            Your browser does not support the audio element.
+        </video>
+    </div>-->
+    <div style="width:100%; height:400px;">
+        <button data-bind="click: showVideo">播放</button>
+    </div>
+
+    <div data-bind="foreach: videos">
+        <img data-bind="attr: { src: ImageUrl, title: ImageTitle }" style="width:100%; margin-bottom:20px;" />
+    </div>
+</div>
+    

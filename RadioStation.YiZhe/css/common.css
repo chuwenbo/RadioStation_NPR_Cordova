@@ -1,0 +1,21 @@
+﻿.message-normal {
+    float:left;padding-right:5px;font-size:12px;font-weight:normal;
+}
+
+.message-error {
+   color:red;
+}
+
+.yizhe-loading {
+    position: absolute;
+    top: 50%;
+    margin-top: -15px;
+    left: 50%;
+    margin-left: -15px;
+    font-size:35px;
+    color:lightblue;
+}
+
+.yizhe-hide {
+    display:none;
+}

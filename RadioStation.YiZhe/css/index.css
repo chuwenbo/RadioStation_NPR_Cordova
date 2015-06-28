@@ -1,0 +1,77 @@
+﻿.radio-header {
+    position:absolute;
+    top:0;
+    left:0;
+    right:0;
+    height:50px;
+    background-color:lightblue; 
+    line-height:50px;
+    padding-left:10px;
+}
+
+.main-container {
+    position:absolute;
+    top:50px;
+    bottom:50px; 
+    width:100%; 
+    overflow:hidden;
+}
+
+.main-container-scroller{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -15px; /* Increase this value (in negative) for cross-browser compatibility */
+    overflow: auto;
+}
+
+.radio-navigation {
+    position:absolute;
+    bottom:0;
+    left:0;
+    right:0;
+    height:50px;
+    background-color:lightblue;
+}
+
+.radio-navigation table {
+    width:100%;
+    line-height:50px;
+    text-align:center;
+    padding:0;
+    border-spacing:0;
+}
+.radio-navigation table tbody tr {
+    width:100%;
+}
+.radio-navigation table tbody tr td{ 
+    font-size:20px
+}
+
+.radio-navigation table tbody tr td:hover{ 
+    color:white;
+}
+
+.radio-navigation table tbody tr td:last-child{
+    border-right:none;
+}
+
+.radio-navigation .active {
+    /*background-color:whitesmoke;
+    color:lightblue;
+    font-weight:bolder;*/
+    color:white;
+}
+
+td{
+  -webkit-tap-highlight-color: rgba(255, 255, 255, 0); 
+}
+
+.radio-header .glyphicon-play-circle, .glyphicon-pause {
+    font-size: 24px;
+    float: left;
+    vertical-align: middle;
+    margin-top: 10px;
+    margin-right: 20px;
+}

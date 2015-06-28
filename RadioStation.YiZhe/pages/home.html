@@ -1,0 +1,29 @@
+﻿ <div>
+     <div data-bind="visible:shouldShowList"> 
+         <div class="list-group list-story" data-bind="foreach:storys">
+             <a href="#" class="list-group-item" data-bind="click: $root.showStory">
+                 <h4 class="list-group-item-heading" data-bind="text: Title"></h4>
+                 <p class="list-group-item-text" data-bind="text:Teaser">...</p>
+                 <img data-bind="attr: { src: Image.Url, title: Image.Title }" style="width:100%;" />
+             </a>
+         </div>
+         <div class="list-group">
+             <a href="#" class="list-group-item" style="text-align:center;" data-bind="click: show">
+                 更多
+             </a>
+         </div>
+     </div>
+     <div data-bind="visible:!shouldShowList(),with:story" style="padding-left:10px;padding-right:20px;"> 
+         <div style="margin-top:5px;">
+            <label>正文</label>
+            <span style="float:right;" data-bind="click:goBack">返回</span>
+         </div>
+         <div>
+             <h4 class="list-group-item-heading" data-bind="text: Title"></h4>s
+             <img data-bind="attr: { src: ImageUrl, title: ImageTitle }" style="width:100%;" />
+             <p class="list-group-item-text" data-bind="text:StoryText"></p> 
+         </div>
+     </div>
+  </div>
+    
+ 
